@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header div {
+    display: flex;
+    justify-content: end;
+}
+
+#header_h4 {
+    display: block;
+    text-align: right;
+    background-color: black;
+    color: white;
+    padding: 0.5% 0.5% 0.5% 10%;
+    margin: 0% 0% 0% 0%;
+}
+
+header section {
+    display: flex;
+    padding: 0% 2% 2% 2%;
+}
+
+header section img {
+    width: 20%;
+}
+
+header section div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    justify-content: center;
+    width: 78%;
+}
+
+header section div h2 {
+    color: gray;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+header section div h2 span {
+    background-color: black;
+    color: white;
+}
+
+header section div h4 {
+    background-color: black;
+    color: white;
+    padding: 1% 1% 1% 1%;
+    font-size: 50px;
+    border-radius: 20px;
+    margin: 0% 0% 0% 0%;
+    font-weight: 700;
+}
+
+header section div p {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+hr {
+    height: 3px;
+    color: black;
+}
