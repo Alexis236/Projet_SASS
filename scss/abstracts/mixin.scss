@@ -1,0 +1,13 @@
+@mixin triangle($color, $direction) {
+    display: flex;
+    align-items: center;
+    background-color: $color;
+    color: white;
+    width: 30%;
+
+    @if (direction =="down") {
+        border-top: $color;
+        border-bottom-width: 0;
+    }
+
+}

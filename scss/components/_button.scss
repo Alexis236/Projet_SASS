@@ -1,0 +1,10 @@
+@use '../abstracts/mixin.scss' as *;
+@use '../base/variable' as *;
+
+.btn_principal {
+    @include triangle($color-brown, $arrow_down);
+}
+
+.btn_principal:hover {
+    @include triangle($color-orange, $arrow_down);
+}

@@ -1,6 +1,7 @@
 header {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid black;
 }
 
 header div {
@@ -13,13 +14,13 @@ header div {
     text-align: right;
     background-color: black;
     color: white;
-    padding: 0.5% 0.5% 0.5% 10%;
+    padding: 0.5% 0.5% 0% 10%;
     margin: 0% 0% 0% 0%;
 }
 
 header section {
     display: flex;
-    padding: 0% 2% 2% 2%;
+    padding: 0% 2% 0% 2%;
 }
 
 header section img {
@@ -60,7 +61,21 @@ header section div p {
     font-weight: 700;
 }
 
-hr {
-    height: 3px;
-    color: black;
+
+
+@media screen and (max-width: 1130px)  {
+
+    header section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header section div {
+        width: 100%;
+        align-items: center;
+        
+    padding-left: 0%;
+    }
+    
 }

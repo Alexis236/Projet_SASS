@@ -1,6 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid black;
 }
 
 header div {
@@ -13,13 +14,13 @@ header div {
   text-align: right;
   background-color: black;
   color: white;
-  padding: 0.5% 0.5% 0.5% 10%;
+  padding: 0.5% 0.5% 0% 10%;
   margin: 0% 0% 0% 0%;
 }
 
 header section {
   display: flex;
-  padding: 0% 2% 2% 2%;
+  padding: 0% 2% 0% 2%;
 }
 
 header section img {
@@ -60,25 +61,108 @@ header section div p {
   font-weight: 700;
 }
 
-hr {
-  height: 3px;
-  color: black;
+@media screen and (max-width: 1130px) {
+  header section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header section div {
+    width: 100%;
+    align-items: center;
+    padding-left: 0%;
+  }
 }
-
 body {
   display: flex;
   flex-direction: column;
   margin: 0% 0% 0% 0%;
   background-image: url(/Ressources_Projet_SASS/fond.webp);
+  font-family: "Regular";
 }
 
 main {
   display: flex;
-  margin: 0% 4% 0% 4%;
+  align-items: baseline;
+  margin: 3% 10% 5% 10%;
 }
 
 main section {
   margin: 0% 2% 0% 2%;
+  box-shadow: 5px 5px 5px black;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 213, 213);
+}
+
+main section h2 {
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-size: 50px;
+  margin: 0%;
+  padding: 3%;
+}
+
+main section img {
+  margin: 5% 0% 5% 0%;
+  width: 200px;
+  height: 230px;
+}
+
+main section p {
+  font-size: 30px;
+  margin: 0%;
+  padding: 3%;
+  text-align: justify;
+}
+
+main section button p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1190px) {
+  main {
+    margin: 3% 0% 5% 0%;
+  }
+}
+@media screen and (max-width: 990px) {
+  main {
+    flex-direction: column;
+  }
+  main section {
+    margin-top: 5%;
+  }
+}
+footer {
+  text-align: center;
+  background-color: rgb(5, 5, 82);
+  color: white;
+  padding: 2% 0% 2% 0%;
+}
+
+.btn_principal {
+  display: flex;
+  align-items: center;
+  background-color: rgb(102, 34, 34);
+  color: white;
+  width: 30%;
+}
+
+.btn_principal:hover {
+  display: flex;
+  align-items: center;
+  background-color: #ff9100;
+  color: white;
+  width: 30%;
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(/Ressources_Projet_SASS/AlfaSlabOne-Regular.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */
